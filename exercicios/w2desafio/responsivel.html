@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de Responsividade</title>
+  <style>
+    body {
+      background-color: gray;
+    }
+
+    main { /*configuração responsiva*/
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+
+      min-width: 250px; /* quando diminuir*/
+      max-width: 800px; /* quando tiver grande*/
+      margin: auto; /* centralizar tudo*/
+    }
+
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Testando Responsividade</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo dolores doloremque voluptatibus laudantium quos molestiae, labore veritatis consequatur assumenda quis debitis quae ipsum saepe qui laboriosam provident similique quasi perspiciatis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque error inventore fugit porro quam sequi velit optio placeat laboriosam. Recusandae neque laborum tenetur mollitia porro quia atque necessitatibus ex minus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique molestiae modi officia minima ipsum perferendis eveniet ipsa laboriosam cum, iusto molestias quaerat atque doloremque eos unde consequatur nemo nostrum?</p>
+    <picture>
+      <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+      <img src="imagens/irina-blok.jpg" alt="Irina Block"></picture> <!-- Configuração responsival para colocar tanto em formato grande como formato pequeno como em computador e celular ou tablet e notebook-->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo dolores doloremque voluptatibus laudantium quos molestiae, labore veritatis consequatur assumenda quis debitis quae ipsum saepe qui laboriosam provident similique quasi perspiciatis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque error inventore fugit porro quam sequi velit optio placeat laboriosam. Recusandae neque laborum tenetur mollitia porro quia atque necessitatibus ex minus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique molestiae modi officia minima ipsum perferendis eveniet ipsa laboriosam cum, iusto molestias quaerat atque doloremque eos unde consequatur nemo nostrum?</p>
+  </main>
+</body>
+</html>

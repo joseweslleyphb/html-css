@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links</title>
+  <style>
+
+    /*
+    CSS: # = HTML: id
+    CSS: . = HTML: Class
+    CSS: : = HTML: pseudo-class
+    CSS: :: = HTML: pseudo-element
+    CSS: > = HTML: clildren (filho)
+
+    */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      color: red;
+      text-decoration: none; /* tira a linha sublinada do link*/
+      font-weight: bold; /* fica em negrito*/
+    }
+
+    a:visited { /* para quando você nao tiver visitado o site ficara nessa cor*/
+      color: darkred;
+    }
+
+    a:hover {
+      color: black; /* para poder ficar preto quando passar mouse*/
+      text-decoration: underline; /* para aparecer sublinado quando passar mouse*/
+    }
+
+    a:active { /* quando clicar ele ficar nessa cor (target="_blanck para abri nova aba ao lado")*/
+      color: yellow;
+    }
+
+    .especial {
+      background-color: rgb(185, 134, 134);
+    }
+    .especial::before { /* fazer uma class especial para poder definir cada um que quiser um por um*/
+      content: '⇒';
+    }
+
+    .especial::after {
+      content: '⇐';
+    }
+
+    /*a::before {  aqui sera ceta antes dos texto*/
+     /* content: '⇒';
+    } */
+
+    /*a::after {  significar depois de todos os link acrescentar essas informações no final de cada link*/
+      /*content: '⇐'; /* aqui sera depois
+      /*content: ' [link]'; /*conteudo*/
+      /*text-decoration: none;
+      font-weight: normal;
+      color: darkgray;
+    }*/
+  </style>
+</head>
+<body>
+  <h1>Personalizando Links</h1>
+  <ul>
+    <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositorio GitHub</a></li>
+    <li><a href="https://youtube.com/cursoemvideo/">Canal do YouTube</a></li>
+    <li><a href="https://www.cursoemvideo.com" class="especial">Site do CursoemVideo</a></li>
+  </ul>
+</body>
+</html>

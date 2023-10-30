@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos com HTML5</title>
+</head>
+<body>
+  <h1>Inserindo videos hospedados localmente</h1>
+  <p>Este video está hospedado no meu própio servidor.</p>
+
+<!--<video src="midias/meu-video.mp4" width="500" controls></video> -->
+<!-- essa opção serve para 1 so video o de baixo para varios formatos e mesmo video-->
+
+<video width="500" poster="imagens/paisagem-650.JPG" controls autoplay loop>
+    <source src="midias/meu-video.mp4" type="video/mp4">
+    <!--<source src="midias/meu-video.m4v" type="video/m4v">
+    <source src="midias/meu-video.webm" type="video/webm">
+    <source src="midias/meu-video.ogv" type="video/ogv"> midias para o site adaptando para varios tipos de ocasiões -->
+    <!--"poster" para inserir imagem começo do video, "controls" para dar play nos videos ou audio -->
+    <!-- no caso dos videos tem que ser colocado do menor para maior e essa msg em baixo so vai aparecer quando video não for compativel em nunhem desse 4 formatos acima-->
+    <!-- "autoplay" O recurso de reprodução automática no YouTube facilita na hora de decidir o que assistir em seguida. "loop" volta o video para inicio-->
+    <!-- esses modos de fazer esse processo dar muito trabalho e fica muito pesado no site-->
+    <p>Seu navegador não tem compatibilidade com reprodução de videos.</p>
+</video>
+
+<!-- abaixo são as hospedagem e melhor para poder colocar nos site, para não pesar o site do cliente -->
+
+<h1>Inserindo videos do YouTube</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GQYVu94I998?si=QROodkZNNUwJcnhn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<!-- no youtube e video incorporado na aba compartilhar e copia codigo e cola no HTML5-->
+
+<h1>Inserindo videos do vimeo</h1>
+<iframe src="https://player.vimeo.com/video/79324694?h=69125fa0ca&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<!-- ele vem um paragrafo ae apagar, e so ir em compartihar no site e copia codio e colar aqui-->
+</body>
+</html>

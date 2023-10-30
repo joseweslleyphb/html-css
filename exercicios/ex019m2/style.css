@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*
+  ... tudo que for em HTML é (id) (codigo identificador >> id) obs. o (id) so pode ser usado uma unica vez dentro de um comando e tudo que for em CSS é reistegue (#) (só pode um elemento)
+  ... em HTML é class em css é ponto (.) (pode vários elementos).
+*/
+
+body {
+  background-color: rgb(189, 240, 206);
+  font-family: Arial, Helvetica, sans-serif
+}
+
+h1 {
+  color:  rgb(4, 87, 32);
+}
+
+h1#principal {
+  text-align: center;
+  background-color: green;
+  color: white;
+}
+
+h2 {
+  color: rgb(107, 167, 127);
+}
+
+.basico {
+  color: rgb(35, 129, 67);
+}
+
+.intermediario {
+  color: rgb(185, 230, 26);
+}
+
+.avancado {
+  color: rgb(201, 67, 50);
+}
+
+.destaque {
+  background-color: #ffff0041;
+}
